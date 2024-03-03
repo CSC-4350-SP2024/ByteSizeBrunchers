@@ -39,10 +39,17 @@ npm run dev
 
 # Hosting
 
-Do all the same as above, but now also install and use ngrok in a different terminal
+In a different terminal, host ngrok on the port used by nextjs
 ```
 export NIXPKGS_ALLOW_UNFREE=1
 nix-shell -p ngrok
 ngrok config add-authtoken {token} 
 ngrok http http://localhost:3000
+```
+
+In a different terminal, host postgres locally
+```
+nix-shell -v -E 'import (builtins.fetchurl "https://raw.githubusercontent.com/toraritte/shell.nixes/main/elixir-phoenix-postgres/shell.nix")'
+createdb $(whoami) --host=$PGDATA
+psql --host=localhost --username=$(whoami) --dbname=$(whoami) --port=5432
 ```
