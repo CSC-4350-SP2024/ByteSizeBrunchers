@@ -22,7 +22,17 @@ Run nix-shell in the root directory to install node and everything else
 nix-shell
 ```
 
-To build, cd into the flavorfeed directory and run
+Then navigate to the app directory
+```
+cd flavorfeed
+```
+
+If it's your first time, run
+```
+npm install
+```
+
+To build, run
 ```
 npm build dev
 ```
