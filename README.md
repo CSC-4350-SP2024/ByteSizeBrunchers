@@ -34,6 +34,15 @@ npm install
 
 To build, run
 ```
-npm build dev
+npm run dev
 ```
 
+# Hosting
+
+Do all the same as above, but now also install and use ngrok in a different terminal
+```
+export NIXPKGS_ALLOW_UNFREE=1
+nix-shell -p ngrok
+ngrok config add-authtoken {token} 
+ngrok http http://localhost:3000
+```
