@@ -1,17 +1,17 @@
 [
   {
-    "username": "user",
-    "message": "Hello, how are you?",
+    "username": "system",
+    "message": "What would you like to eat today?",
     "timestamp": "2022-03-01T12:00:00Z"
   },
   {
-    "username": "system",
-    "message": "I'm good, thanks! How about you?",
+    "username": "user",
+    "message": "Idk, maybe something Italian?",
     "timestamp": "2022-03-01T12:01:00Z"
   },
   {
-    "username": "user",
-    "message": "I'm doing well, thank you!",
+    "username": "system",
+    "message": "How about this?",
     "timestamp": "2022-03-01T12:02:00Z"
   }
 ]
