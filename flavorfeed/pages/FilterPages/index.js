@@ -6,12 +6,13 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
-          "Looking for anything specfic today?"
+          Looking for anything specfic today?
         </h1>
 
-	<p>"Use these filters to find exactly what you are looking for?"</p>
+	<p>Use these filters to find exactly what you are looking for?</p>
 	<search>
-	<label>"Filter:"</label>
+	<label>Filter:</label>
+	<input type="search" placeholder="get closer to your perfect recipe" name="filter">
 	</search>
       </main>
 
