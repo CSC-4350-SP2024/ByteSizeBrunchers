@@ -13,6 +13,18 @@ export default function Home() {
 	<div class="filterbox">
 	<input type="search" placeholder="Filter away..." name="Filter 2"/>
 	</div>
+
+	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
+	<select name = "Cuisines" id = "Cuisines"></select>
+	<option value = "American">American</option> 
+	<option value = "Indian">Indian</option> 
+	<option value = "French">French</option> 
+	<option value = "Italian">Italian</option> 
+	<option value = "Korean">Korean</option> 
+	<option value = "Mexican">Mexican</option> 
+	<option value = "Japanese">Japanese</option> 
+ 	
+
       </main>
 
       <footer>
