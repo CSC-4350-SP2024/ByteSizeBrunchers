@@ -6,9 +6,38 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
-          Filter Page In Progress...
+          Looking for anything specfic today?
         </h1>
+
+	<h2>We got you! Your recipes are just a quick filter away!</h2>
+	<div class="filterbox">
+	<input type="search" placeholder="Find a specific recipe" name="Filter"/>
+	</div>
+
+	<p></p>
+	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
+	<select name = "Cuisines" id = "cuisines">
+	<option value = "American"> American </option> 
+	<option value = "Indian"> Indian </option> 
+	<option value = "French"> French </option> 
+	<option value = "Italian"> Italian </option> 
+	<option value = "Korean"> Korean </option> 
+	<option value = "Mexican"> Mexican </option> 
+	<option value = "Japanese"> Japanese </option> 
+ 	</select>	
+
+	<p></p>
+	<label for = "DietChoices">Any particular diet options for today?</label>
+	<select name = "DietChoices" id = "diets">
+	<option value = "Vegan"> Vegan </option>
+	<option value = "Keto"> Keto </option>
+	<option value = "Non-Vegeterian"> Non-Vegeterian </option>
+	<option value = "Vegeterian"> Vegeterian </option>
+	<option value = "Eggterian"> Eggterian </option>
+	</select>
+
       </main>
+
 
       <footer>
         <a
@@ -17,18 +46,20 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Made by ByteSizedBrunchers
+	  Last Updated on 3/7 7:06 am
         </a>
       </footer>
 
       <style jsx>{`
         main {
           padding: 5rem 0;
-          flex: 1;
+          flex: 10;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
+
         footer {
           width: 100%;
           height: 100px;
