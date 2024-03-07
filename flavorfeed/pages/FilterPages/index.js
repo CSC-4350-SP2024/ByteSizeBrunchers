@@ -14,6 +14,9 @@ export default function Home() {
 	<label>Filter:</label>
 	<input type="search" placeholder="get closer to your perfect recipe" name="filter"/>
 	</search>
+
+	<div class="search-containder">
+	<input type="search" placeholder="Filter away..." name="Filter 2"/>
       </main>
 
       <footer>
