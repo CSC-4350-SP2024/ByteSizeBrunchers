@@ -12,7 +12,7 @@ export default function Home() {
 	<p>Filter</p>
 	<search>
 	<input type = "search" id ="query">	
-
+	</input>
 	</search>
       </main>
 
