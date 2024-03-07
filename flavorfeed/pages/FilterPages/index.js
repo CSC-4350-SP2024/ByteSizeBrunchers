@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
-          Flavor Feed
+          Flavor Feed Ramita
         </h1>
 
       </main>
