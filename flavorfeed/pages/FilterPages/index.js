@@ -11,7 +11,7 @@ export default function Home() {
 
 	<h2>We got you! Your recipes are just a quick filter away!</h2>
 	<div class="filterbox">
-	<label> Search for a particular recipe:</label>
+	<label> Search for a particular recipe: </label>
 	<input type="search" placeholder="Your next eat awaits" name="Filter"/>
 	</div>
 
