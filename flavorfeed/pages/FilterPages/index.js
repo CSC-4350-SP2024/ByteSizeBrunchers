@@ -9,7 +9,7 @@ export default function Home() {
           Looking for anything specfic today?
         </h1>
 
-	<h2>Use these filters to find exactly what you are looking for</h2>
+	<h2>Use these filters to find exactly what you are looking for!</h2>
 	<search>
 	<label>Filter:</label>
 	<input type="search" placeholder="get closer to your perfect recipe" name="filter"/>
@@ -30,7 +30,7 @@ export default function Home() {
       <style jsx>{`
         main {
           padding: 5rem 0;
-          flex: 1;
+          flex: 10;
           display: flex;
           flex-direction: column;
           justify-content: center;
