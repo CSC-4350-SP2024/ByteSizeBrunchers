@@ -16,7 +16,7 @@ export default function ChatContainer({ chatLogs, setChatLogs }) {
   };
 
   return (
-    <div id="chat-container" style={{position: 'fixed', bottom: '0', right: '0', width: '30vw', height: '30vh', zIndex: 1000}}>
+    <div id="chat-container" style={{position: 'fixed', background: 'white', bottom: '0', right: '0', width: '30vw', height: '30vh', zIndex: 1000}}>
       {chatLogs.map((log, index) => (
         <div key={index} style={{textAlign: log.username === 'user' ? 'right' : 'left'}}>
           <p>{log.message}</p>

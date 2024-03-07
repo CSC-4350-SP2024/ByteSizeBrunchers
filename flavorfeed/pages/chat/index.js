@@ -1,7 +1,10 @@
+import dynamic from 'next/dynamic'; //debugging entry
 import styles from '../../styles/Home.module.css';
 import { useEffect, useState } from 'react';
-import Card from './Card';
 import ChatContainer from './ChatContainer';
+
+//dynamic import of Card component with SSR disabled
+const CardWithNoSSR = dynamic(() => import('./Card'), { ssr: false }); 
 
 export default function Home() {
   const [chatLogs, setChatLogs] = useState([]);
@@ -15,8 +18,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
 
-      <div id="card" style={{position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', height: '80vh', width: '50vw'}}>
-        <Card />
+      <div id="card" style={{position: 'absolute', top: '25%', left: '35%', transform: 'translate(-50%, -50%)', height: '80vh', width: '50vw'}}>
+        {/* <Card /> Commented out for debugging */}
+        <CardWithNoSSR />
       </div>
 
       <ChatContainer chatLogs={chatLogs} setChatLogs={setChatLogs} />
