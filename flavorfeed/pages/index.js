@@ -9,13 +9,13 @@ export default function Home() {
           Welcome to Flavor Feed
         </h1>
           <a
-            href="localhost:3000/login"
+            href="localhost:3000/loginpage"
             target="_blank"
             rel="noopener noreferrer"
           >Login
           </a>
           <a
-            href="localhost:3000/login"
+            href="localhost:3000/loginpage"
             target="_blank"
             rel="noopener noreferrer"
           >Sign Up
