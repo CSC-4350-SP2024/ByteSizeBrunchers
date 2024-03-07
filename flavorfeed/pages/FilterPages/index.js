@@ -17,6 +17,7 @@ export default function Home() {
 
 	<div class="search-containder">
 	<input type="search" placeholder="Filter away..." name="Filter 2"/>
+	</div>
       </main>
 
       <footer>
