@@ -11,21 +11,33 @@ export default function Home() {
 
 	<h2>Use these filters to find exactly what you are looking for!</h2>
 	<div class="filterbox">
-	<input type="search" placeholder="Filter away..." name="Filter 2"/>
+	<input type="search" placeholder="Find a specific recipe" name="Filter"/>
 	</div>
 
+	<br>
 	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
-	<select name = "Cuisines" id = "Cuisines">
-	<option value = "American">American</option> 
-	<option value = "Indian">Indian</option> 
-	<option value = "French">French</option> 
-	<option value = "Italian">Italian</option> 
-	<option value = "Korean">Korean</option> 
-	<option value = "Mexican">Mexican</option> 
-	<option value = "Japanese">Japanese</option> 
+	<select name = "Cuisines" id = "cuisines">
+	<option value = "American"> American </option> 
+	<option value = "Indian"> Indian </option> 
+	<option value = "French"> French </option> 
+	<option value = "Italian"> Italian </option> 
+	<option value = "Korean"> Korean </option> 
+	<option value = "Mexican"> Mexican </option> 
+	<option value = "Japanese"> Japanese </option> 
  	</select>	
+	
+	<br>
+	<label for = "DietChoices">Any particular diet options for today?</label.
+	<select name = "DietChoices" id = "diets">
+	<option value = "Vegan"> Vegan </option>
+	<option value = "Keto"> Keto </option>
+	<option value = "Non-Vegeterian"> Non-Vegeterian </option>
+	<option value = "Vegeterian"> Vegeterian </option>
+	<option value = "Eggterian"> Eggterian </option>
+	</select>
 
       </main>
+
 
       <footer>
         <a
@@ -48,13 +60,6 @@ export default function Home() {
           align-items: center;
         }
 
-	search {
-          width: 1000px;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-	}
         footer {
           width: 100%;
           height: 100px;
