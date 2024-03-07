@@ -12,7 +12,6 @@ export default function Home() {
 	<p>"Use these filters to find exactly what you are looking for?"</p>
 	<search>
 	<label>"Filter:"</label>
-	<input> type = "search">
 	</search>
       </main>
 
