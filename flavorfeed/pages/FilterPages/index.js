@@ -9,7 +9,7 @@ export default function Home() {
           Looking for anything specfic today?
         </h1>
 
-	<h2>Use these filters to find exactly what you are looking for!</h2>
+	<h2>We got you! Your recipes are just a quick filter away!</h2>
 	<div class="filterbox">
 	<input type="search" placeholder="Find a specific recipe" name="Filter"/>
 	</div>
@@ -44,7 +44,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Made by ByteSizedBrunchers
-	  Last Updated on 3/7 5:10 am
+	  Last Updated on 3/7 7:01 am
         </a>
       </footer>
 
