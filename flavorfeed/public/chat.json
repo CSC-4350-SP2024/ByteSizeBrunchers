@@ -1,0 +1,17 @@
+[
+  {
+    "username": "system",
+    "message": "What would you like to eat today?",
+    "timestamp": "2022-03-01T12:00:00Z"
+  },
+  {
+    "username": "user",
+    "message": "Idk, maybe something Italian?",
+    "timestamp": "2022-03-01T12:01:00Z"
+  },
+  {
+    "username": "system",
+    "message": "How about this?",
+    "timestamp": "2022-03-01T12:02:00Z"
+  }
+]
