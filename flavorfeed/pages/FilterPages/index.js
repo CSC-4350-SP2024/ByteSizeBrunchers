@@ -10,12 +10,7 @@ export default function Home() {
         </h1>
 
 	<h2>Use these filters to find exactly what you are looking for!</h2>
-	<search>
-	<label>Filter:</label>
-	<input type="search" placeholder="get closer to your perfect recipe" name="filter"/>
-	</search>
-
-	<div class="search-containder">
+	<div class="filterbox">
 	<input type="search" placeholder="Filter away..." name="Filter 2"/>
 	</div>
       </main>
