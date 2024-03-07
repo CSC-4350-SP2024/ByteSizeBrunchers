@@ -6,13 +6,13 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
-          Filter Page In Progress...
+          "Looking for anything specfic today?"
         </h1>
 
-	<p>Filter</p>
+	<p>"Use these filters to find exactly what you are looking for?"</p>
 	<search>
-	<input type = "search" id ="query">	
-	</input>
+	<label>"Filter:"</label>
+	<input> type = "search"</input>
 	</search>
       </main>
 
