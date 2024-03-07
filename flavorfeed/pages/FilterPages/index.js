@@ -9,7 +9,7 @@ export default function Home() {
           Looking for anything specfic today?
         </h1>
 
-	<p>Use these filters to find exactly what you are looking for?</p>
+	<h2>Use these filters to find exactly what you are looking for</h2>
 	<search>
 	<label>Filter:</label>
 	<input type="search" placeholder="get closer to your perfect recipe" name="filter"/>
@@ -36,6 +36,14 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
+
+	search {
+          width: 100%;
+          height: 100px;
+          border-top: 1px solid #eaeaea;
+          display: flex;
+          justify-content: center;
+	}
         footer {
           width: 100%;
           height: 100px;
