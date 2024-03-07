@@ -26,6 +26,16 @@ export default function Home() {
             rel="noopener noreferrer"
           >Try the Demo
           </a>
+          <a
+            href="localhost:3000/FilterPages"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Here are our extensive filter options
+          </a>
+
+
+
+
 
       </main>
 
