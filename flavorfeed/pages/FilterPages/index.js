@@ -14,6 +14,7 @@ export default function Home() {
 	<input type="search" placeholder="Find a specific recipe" name="Filter"/>
 	</div>
 
+	<p></p>
 	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
 	<select name = "Cuisines" id = "cuisines">
 	<option value = "American"> American </option> 
