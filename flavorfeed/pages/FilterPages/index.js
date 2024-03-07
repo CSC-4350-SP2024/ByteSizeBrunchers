@@ -15,7 +15,7 @@ export default function Home() {
 	</div>
 
 	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
-	<select name = "Cuisines" id = "Cuisines"></select>
+	<select name = "Cuisines" id = "Cuisines">
 	<option value = "American">American</option> 
 	<option value = "Indian">Indian</option> 
 	<option value = "French">French</option> 
@@ -23,7 +23,7 @@ export default function Home() {
 	<option value = "Korean">Korean</option> 
 	<option value = "Mexican">Mexican</option> 
 	<option value = "Japanese">Japanese</option> 
- 	
+ 	</select>	
 
       </main>
 
