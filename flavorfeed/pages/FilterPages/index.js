@@ -17,7 +17,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Made by ByteSizedBrunchers
-	  Last Updated on 3/6 11:01pm
+	  Last Updated on 3/6 11:30pm
         </a>
       </footer>
 
