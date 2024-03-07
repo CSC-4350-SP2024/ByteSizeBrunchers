@@ -28,8 +28,8 @@ export default function Home() {
 	
 	<label for = "food">What food the mood for today?</label>
 	<select name = "food" id = "food">
-	<option value = "American"> American </option> 
-	<option value = "Indian"> Indian </option> 
+	<option value = "food1"> American </option> 
+	<option value = "food2"> Indian </option> 
 	
 	<label for = "DietChoices">Any particular diet options for today?</label.
 	<select name = "DietChoices" id = "diets">
