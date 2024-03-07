@@ -8,6 +8,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Filter Page In Progress...
         </h1>
+
+	<p>Filter</p>
+	<search>
+	<input type = "search" id ="query">	
+
+	</search>
       </main>
 
       <footer>
