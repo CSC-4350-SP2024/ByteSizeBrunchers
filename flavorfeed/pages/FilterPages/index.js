@@ -38,7 +38,7 @@ export default function Home() {
         }
 
 	search {
-          width: 200px;
+          width: 1000px;
           height: 100px;
           border-top: 1px solid #eaeaea;
           display: flex;
