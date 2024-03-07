@@ -1,4 +1,4 @@
-import Head from 'next/head';
+//limport Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -6,8 +6,26 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <h1 className={styles.title}>
-          Flavor Feed
+          Welcome to Flavor Feed
         </h1>
+          <a
+            href="localhost:3000/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Login
+          </a>
+          <a
+            href="localhost:3000/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Sign Up
+          </a>
+          <a
+            href="localhost:3000/chat"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Try the Demo
+          </a>
 
       </main>
 
