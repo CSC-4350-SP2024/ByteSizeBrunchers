@@ -11,12 +11,12 @@ export default function Home() {
 
 	<h2>We got you! Your recipes are just a quick filter away!</h2>
 	<div class="filterbox">
-	<input type="search" placeholder="Find a specific recipe" name="Filter"/>
+	<input type="search" placeholder="Your next eat awaits" name="Filter"/>
 	</div>
 
 	<p></p>
 	<label for = "Cuisines">What cuisines are you in the mood for today?</label>
-	<select name = "Cuisines" id = "cuisines">
+	<select name = "Cuisines Choices" id = "Cuisines">
 	<option value = "American"> American </option> 
 	<option value = "Indian"> Indian </option> 
 	<option value = "French"> French </option> 
@@ -28,7 +28,7 @@ export default function Home() {
 
 	<p></p>
 	<label for = "DietChoices">Any particular diet options for today?</label>
-	<select name = "DietChoices" id = "diets">
+	<select name = "Diet Choices" id = "DietChoices">
 	<option value = "Vegan"> Vegan </option>
 	<option value = "Keto"> Keto </option>
 	<option value = "Non-Vegeterian"> Non-Vegeterian </option>
