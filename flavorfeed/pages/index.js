@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to Flavor Feed
         </h1>
-// Used Link component to link the pages together
+<!-- Used Link component to link the pages together -->
           <Link href="/loginpage">
 	    Login
 	  </Link>
