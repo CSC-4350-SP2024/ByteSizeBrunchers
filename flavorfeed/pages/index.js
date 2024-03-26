@@ -11,15 +11,15 @@ export default function Home() {
         </h1>
 {/* Used Link component to link the pages together */}
           <Link href="/loginpage">
-	    Login
-	  </Link>
-	  <Link href="/loginpage">
+            Login
+          </Link>
+          <Link href="/loginpage">
             Sign Up
           </Link>
-	  <Link href="/chat">
+          <Link href="/chat">
             Try the Demo
           </Link>
-	  <Link href="/filter">
+          <Link href="/filter">
             Here are our extensive filter options
           </Link>
 
