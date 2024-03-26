@@ -1,5 +1,6 @@
 //limport Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -8,34 +9,18 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to Flavor Feed
         </h1>
-          <a
-            href="localhost:3000/loginpage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Login
-          </a>
-          <a
-            href="localhost:3000/loginpage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Sign Up
-          </a>
-          <a
-            href="localhost:3000/chat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Try the Demo
-          </a>
-          <a
-            href="localhost:3000/filter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Here are our extensive filter options
-          </a>
-
-
-
-
+          <Link href="/loginpage">
+	    Login
+	  </Link>
+	  <Link href="/loginpage">
+            Sign Up
+          </Link>
+	  <Link href="/chat">
+            Try the Demo
+          </Link>
+	  <Link href="/filter">
+            Here are our extensive filter options
+          </Link>
 
       </main>
 

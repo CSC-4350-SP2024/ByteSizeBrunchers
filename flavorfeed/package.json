@@ -8,6 +8,7 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@zeit/next-css": "^1.0.1",
+    "axios": "^1.6.7",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -15,5 +16,19 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "name": "flavorfeed",
+  "version": "1.0.0",
+  "description": "food swipe app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwinn19464/ByteSizeBrunchers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwinn19464/ByteSizeBrunchers/issues"
+  },
+  "homepage": "https://github.com/jwinn19464/ByteSizeBrunchers#readme"
 }
