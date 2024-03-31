@@ -33,7 +33,12 @@ vector_dim = emb_model.encode(["hi"]).shape[1]
 annoy_index = AnnoyIndex(vector_dim, 'angular')
 annoy_index.load('recipe_index.ann')
 
-def query(model, index, query, k):
+DEBUG=True
+
+
+
+
+def query_index(model, index, query, k):
     """ Returns top-k closest matching vectors to a query
         from an annoy index.
         model:  SentenceTransformer model used for encoding the query
@@ -57,15 +62,12 @@ def query_endpoint():
             image_embeds = default_image_embeds
             
             # Call the model.answer_question function with the extracted query and image_embeds
-            print(image_embeds.shape)
-            print(query)
+            if DEBUG: print(query)
             response = model.answer_question(image_embeds, query, tokenizer)
-            """
-            print(response)
-            recipe = query(emb_model, annoy_index, response, 1)
-            print(recipe)
+            if DEBUG: print(response)
+            recipe = recipes[query_index(emb_model, annoy_index, response, 1)[0]]
+            if DEBUG: print(recipe)
             # Return the response as JSON
-            """
             return jsonify({'response': recipe})
         else:
             return jsonify({'error': 'Missing query in the JSON payload'}), 400
