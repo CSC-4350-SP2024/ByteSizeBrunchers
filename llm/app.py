@@ -1,6 +1,8 @@
+from PIL import Image
+from annoy import AnnoyIndex
 from flask import Flask, request, jsonify
 from transformers import AutoModelForCausalLM, CodeGenTokenizerFast as Tokenizer
-from PIL import Image
+from sentence_transformers import SentenceTransformer
 
 app = Flask(__name__)
 
@@ -12,6 +14,35 @@ tokenizer = Tokenizer.from_pretrained(model_id)
 # Load the default image
 default_image = Image.open('./default.jpeg')
 default_image_embeds = model.encode_image(default_image)
+
+# Load recipes index
+recipes = [
+    "Spaghetti Carbonara",
+    "Chicken Tikka Masala",
+    "Beef Stroganoff",
+    "Vegetable Stir-Fry",
+    "Mushroom Risotto",
+    "Pesto Pasta",
+    "Chili Con Carne",
+    "Grilled Salmon with Lemon Butter Sauce",
+    "Roasted Garlic Mashed Potatoes",
+    "Chocolate Chip Cookies"
+]
+emb_model = SentenceTransformer('all-MiniLM-L6-v2')
+vector_dim = emb_model.encode(["hi"]).shape[1]
+annoy_index = AnnoyIndex(vector_dim, 'angular')
+annoy_index.load('recipe_index.ann')
+
+def query(model, index, query, k):
+    """ Returns top-k closest matching vectors to a query
+        from an annoy index.
+        model:  SentenceTransformer model used for encoding the query
+        index:  AnnoyIndex used for nearest neighbor search
+        query:  string that we want to find the closest match for in the index
+        k:      integer, the number of closest matches to return
+        returns: list[str], containing the unvectorized matches"""
+    vector = model.encode([query])[0]
+    return index.get_nns_by_vector(vector, k)
 
 @app.route('/query', methods=['POST'])
 def query_endpoint():
@@ -26,10 +57,16 @@ def query_endpoint():
             image_embeds = default_image_embeds
             
             # Call the model.answer_question function with the extracted query and image_embeds
+            print(image_embeds.shape)
+            print(query)
             response = model.answer_question(image_embeds, query, tokenizer)
-            
+            """
+            print(response)
+            recipe = query(emb_model, annoy_index, response, 1)
+            print(recipe)
             # Return the response as JSON
-            return jsonify({'response': response})
+            """
+            return jsonify({'response': recipe})
         else:
             return jsonify({'error': 'Missing query in the JSON payload'}), 400
     else:
