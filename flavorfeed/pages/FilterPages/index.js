@@ -35,6 +35,7 @@ export default function Home() {
 	<option value = "Non-Vegeterian"> Non-Vegeterian </option>
 	<option value = "Vegeterian"> Vegeterian </option>
 	<option value = "Eggterian"> Eggterian </option>
+	<option value = "Pescatarian"> Pescatarian </option>
 	</select>
 
       </main>
