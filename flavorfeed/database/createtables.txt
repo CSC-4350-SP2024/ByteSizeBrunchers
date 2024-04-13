@@ -1,0 +1,18 @@
+
+To create table for users:
+
+CREATE TABLE users (
+    USERID UUID PRIMARY KEY,
+    name VARCHAR(100),
+    diet VARCHAR(50),
+    conversationIDs UUID[] 
+);
+
+
+To create table for conversations:
+
+CREATE TABLE conversations (
+    CONVERSATIONID UUID PRIMARY KEY,
+    userPrompts TEXT,
+    modelResponses TEXT
+);
