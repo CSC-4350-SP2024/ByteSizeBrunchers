@@ -39,32 +39,22 @@ async function fetchConversation(conversationID) {
         console.error('Error fetching conversation:', error);
     }
 }
-/*
-async function appendUserInput(conversationID, userInput) {
-    try {
-        await sql`UPDATE conversations SET userPrompts = array_append(userPrompts, ${userInput}) WHERE conversationID = ${conversationID}`;
-        console.log('User input appended successfully');
-    } catch (error) {
-        console.error('Error appending user input:', error);
-    }
-}
-*/
-/*
-async function appendUserInput(conversationID, userInput) {
-  try {
-    await sql`UPDATE conversations SET userPrompts = array_append(userPrompts, ARRAY[${userInput}]) WHERE conversationID = ${conversationID}`;
-    console.log('User input appended successfully');
-  } catch (error) {
-    console.error('Error appending user input:', error);
-  }
-}
-*/
+
 async function appendUserInput(conversationID, userInput) {
   try {
     await sql`UPDATE conversations SET userPrompts = userPrompts || ARRAY[${userInput}] WHERE conversationID = ${conversationID}`;
     console.log('User input appended successfully');
   } catch (error) {
     console.error('Error appending user input:', error);
+  }
+}
+
+async function appendModelOutput(conversationID, modelOutput) {
+  try {
+    await sql`UPDATE conversations SET modelResponses = modelResponses || ARRAY[${modelOutput}] WHERE conversationID = ${conversationID}`;
+    console.log('Model output appended successfully');
+  } catch (error) {
+    console.error('Error appending model output:', error);
   }
 }
 
@@ -75,14 +65,13 @@ async function test() {
         //fetchUser(userID);
         const result = await fetchConversationID(userID)
         const conversationID = result[0].conversationids[0]     
-        const conversation = await fetchConversation(conversationID)
-
         //console.log(result)
         //console.log(conversationID)
-        console.log(conversation)
+        console.log(await fetchConversation(conversationID))
         await appendUserInput(conversationID, "I want hotdogs")
-        const updatedConversation = await fetchConversation(conversationID)
-        console.log(updatedConversation)
+        console.log(await fetchConversation(conversationID))
+        await appendModelOutput(conversationID, "Then get some hotdogs, yo")
+        console.log(await fetchConversation(conversationID))
 
     } catch (error) {
         console.error('Error:', error);
