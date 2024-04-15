@@ -6,7 +6,7 @@ PORT="3000"
 
 # Set the user ID and query
 USER_ID="e6328e4a-4477-4273-b299-8630ee657439"
-QUERY="I want something hearty"
+QUERY="something else italian"
 
 # Create the JSON payload
 JSON_PAYLOAD="{\"userID\":\"$USER_ID\",\"query\":\"$QUERY\"}"
