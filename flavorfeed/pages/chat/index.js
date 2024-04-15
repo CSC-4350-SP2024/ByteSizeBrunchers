@@ -45,7 +45,7 @@ export default function Home() {
 	<div className={styles.title}>
 		Flavor Feed
 	</div>	
-	<chatbox className={styles.chatboxcontainer}>
+	<div className={styles.chatboxcontainer}>
 		<div className={styles.chatleft} />
 		<div className={styles.chatbox}>	
 			<ul className={styles.chatbot}>
@@ -75,7 +75,7 @@ export default function Home() {
 			</div>
 		</div>
 		<div className={styles.chatright} />
-	</chatbox>
+	</div>
 
 
 	<footer className={styles.footer}>
