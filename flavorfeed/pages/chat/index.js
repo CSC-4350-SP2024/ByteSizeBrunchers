@@ -12,6 +12,7 @@ export default function Home() {
 	async function ff_userinput(userinput) {
 		// Add user message to the chat window
 		setMessages([...messages, { text: userinput, from: 'user' }]);
+		console.log(userinput);
 		
 		try {
 			// Make API call to LLM API using fetch
@@ -25,6 +26,7 @@ export default function Home() {
 					query: userinput
 				})
 			});
+			console.log(response);
 
 			if (!response.ok) {
 				throw new Error(`HTTP error! Status: ${response.status}`);
@@ -32,7 +34,8 @@ export default function Home() {
 
 			/* get llm response and add to list */
 			const llm_response = await response.json();
-			setMessages([...messages, { text: llm_response.choices[0].message.content, from: 'bot' }]);
+			console.log(llm_response);
+    		setMessages([...messages, { text: llm_response.response, from: 'bot' }]);
 		} catch (error) {
 			console.error('Error fetching response from backend API:', error);
 		}
