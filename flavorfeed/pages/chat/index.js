@@ -58,7 +58,7 @@ export default function Home() {
 				</li>
 
 				{messages.map((message, index) => (
-					<li className={message.from === 'user' ? styles.incoming : styles.outgoing}>
+					<li key={index} className={message.from === 'user' ? styles.incoming : styles.outgoing}>
 					{message.from === 'user' ? "" : (<span> <img src="../ff_logo.jpg" height="40px"/> </span>)}
 					<p>{message.text}</p>
 				</li>))}
