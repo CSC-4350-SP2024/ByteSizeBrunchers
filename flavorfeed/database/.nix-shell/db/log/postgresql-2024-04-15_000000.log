@@ -1,0 +1,8 @@
+2024-04-15 18:20:22.675 UTC [326436] LOG:  connection received: host=::1 port=54086
+2024-04-15 18:20:22.676 UTC [326436] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-15 18:25:10.030 UTC [327975] LOG:  connection received: host=::1 port=42318
+2024-04-15 18:25:10.031 UTC [327975] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-15 18:31:27.544 UTC [329538] LOG:  connection received: host=::1 port=51832
+2024-04-15 18:31:27.545 UTC [329538] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-15 18:35:51.566 UTC [330243] LOG:  connection received: host=::1 port=44512
+2024-04-15 18:35:51.566 UTC [330243] LOG:  connection authorized: user=tama database=tama application_name=postgres.js

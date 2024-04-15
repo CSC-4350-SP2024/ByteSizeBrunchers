@@ -1,0 +1,86 @@
+2024-04-14 20:12:15.391 UTC [108434] LOG:  starting PostgreSQL 13.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2024-04-14 20:12:15.391 UTC [108434] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-04-14 20:12:15.391 UTC [108434] LOG:  listening on IPv6 address "::", port 5432
+2024-04-14 20:12:15.393 UTC [108434] LOG:  listening on Unix socket "/home/tama/work/ByteSizeBrunchers/flavorfeed/database/.nix-shell/db/.s.PGSQL.5432"
+2024-04-14 20:12:15.396 UTC [108436] LOG:  database system was shut down at 2024-04-14 20:12:15 UTC
+2024-04-14 20:12:15.400 UTC [108434] LOG:  database system is ready to accept connections
+2024-04-14 20:12:24.581 UTC [108640] LOG:  connection received: host=[local]
+2024-04-14 20:12:24.582 UTC [108640] LOG:  connection authorized: user=tama database=postgres application_name=createdb
+2024-04-14 20:12:28.631 UTC [108667] LOG:  connection received: host=::1 port=44808
+2024-04-14 20:12:28.632 UTC [108667] LOG:  connection authorized: user=tama database=tama application_name=psql
+2024-04-14 20:15:55.837 UTC [109893] LOG:  connection received: host=::1 port=50296
+2024-04-14 20:15:55.838 UTC [109893] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:25:40.524 UTC [114556] LOG:  connection received: host=::1 port=34796
+2024-04-14 20:25:40.525 UTC [114556] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:26:30.191 UTC [114793] LOG:  connection received: host=::1 port=44116
+2024-04-14 20:26:30.192 UTC [114793] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:33:07.193 UTC [115662] LOG:  connection received: host=::1 port=46070
+2024-04-14 20:33:07.194 UTC [115662] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:33:27.546 UTC [115728] LOG:  connection received: host=::1 port=35716
+2024-04-14 20:33:27.547 UTC [115728] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:37:16.254 UTC [116670] LOG:  connection received: host=::1 port=49646
+2024-04-14 20:37:16.255 UTC [116670] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:38:13.939 UTC [116816] LOG:  connection received: host=::1 port=45220
+2024-04-14 20:38:13.940 UTC [116816] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:39:42.974 UTC [117090] LOG:  connection received: host=::1 port=37112
+2024-04-14 20:39:42.975 UTC [117090] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:40:05.027 UTC [117248] LOG:  connection received: host=::1 port=58416
+2024-04-14 20:40:05.028 UTC [117248] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:40:36.716 UTC [117328] LOG:  connection received: host=::1 port=37760
+2024-04-14 20:40:36.717 UTC [117328] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:41:23.236 UTC [117448] LOG:  connection received: host=::1 port=46722
+2024-04-14 20:41:23.237 UTC [117448] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:41:24.716 UTC [117468] LOG:  connection received: host=::1 port=46738
+2024-04-14 20:41:24.718 UTC [117468] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:41:26.478 UTC [117488] LOG:  connection received: host=::1 port=46744
+2024-04-14 20:41:26.479 UTC [117488] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:41:33.743 UTC [117530] LOG:  connection received: host=::1 port=45824
+2024-04-14 20:41:33.745 UTC [117530] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:44:12.001 UTC [117946] LOG:  connection received: host=::1 port=49928
+2024-04-14 20:44:12.002 UTC [117946] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:44:38.825 UTC [118071] LOG:  connection received: host=::1 port=57354
+2024-04-14 20:44:38.826 UTC [118071] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:45:32.762 UTC [118254] LOG:  connection received: host=::1 port=39662
+2024-04-14 20:45:32.763 UTC [118254] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:45:43.930 UTC [118366] LOG:  connection received: host=::1 port=57386
+2024-04-14 20:45:43.931 UTC [118366] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:46:10.141 UTC [118464] LOG:  connection received: host=::1 port=46876
+2024-04-14 20:46:10.142 UTC [118464] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 20:46:23.940 UTC [118516] LOG:  connection received: host=::1 port=50248
+2024-04-14 20:46:23.941 UTC [118516] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:12:36.476 UTC [122003] LOG:  connection received: host=::1 port=43110
+2024-04-14 21:12:36.477 UTC [122003] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:12:49.028 UTC [122072] LOG:  connection received: host=::1 port=46792
+2024-04-14 21:12:49.029 UTC [122072] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:13:08.707 UTC [122139] LOG:  connection received: host=::1 port=57328
+2024-04-14 21:13:08.708 UTC [122139] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:15:02.593 UTC [122441] LOG:  connection received: host=::1 port=45478
+2024-04-14 21:15:02.594 UTC [122441] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:15:16.365 UTC [122492] LOG:  connection received: host=::1 port=50060
+2024-04-14 21:15:16.366 UTC [122492] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:15:24.922 UTC [122537] LOG:  connection received: host=::1 port=49474
+2024-04-14 21:15:24.923 UTC [122537] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 21:17:51.798 UTC [122876] LOG:  connection received: host=::1 port=35846
+2024-04-14 21:17:51.799 UTC [122876] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 23:51:27.837 UTC [151032] LOG:  connection received: host=::1 port=40600
+2024-04-14 23:51:27.837 UTC [151032] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 23:55:45.319 UTC [152397] LOG:  connection received: host=::1 port=56466
+2024-04-14 23:55:45.319 UTC [152397] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 23:56:36.425 UTC [152572] LOG:  connection received: host=::1 port=49168
+2024-04-14 23:56:36.425 UTC [152572] LOG:  connection authorized: user=tama database=tama application_name=postgres.js
+2024-04-14 23:58:11.687 UTC [108667] ERROR:  syntax error at or near "ee657439" at character 64
+2024-04-14 23:58:11.687 UTC [108667] STATEMENT:  select * from users where userid = e6328e4a-4477-4273-b299-8630ee657439
+	;
+2024-04-14 23:58:19.151 UTC [108667] ERROR:  column "e6328e4a-4477-4273-b299-8630ee657439" does not exist at character 36
+2024-04-14 23:58:19.151 UTC [108667] STATEMENT:  select * from users where userid = "e6328e4a-4477-4273-b299-8630ee657439";
+2024-04-14 23:58:27.190 UTC [108667] ERROR:  column "e6328e4a-4477-4273-b299-8630ee657439" does not exist at character 34
+2024-04-14 23:58:27.190 UTC [108667] STATEMENT:  select * from users where userid="e6328e4a-4477-4273-b299-8630ee657439";
+2024-04-14 23:59:22.336 UTC [108667] ERROR:  syntax error at or near "SELECT" at character 91
+2024-04-14 23:59:22.336 UTC [108667] STATEMENT:  select * from conversations where conversationid = 'c0c65d10-e97d-438e-8e1b-d0610d5ce6d3'
+	SELECT * FROM users WHERE userid = 'e6328e4a-4477-4273-b299-8630ee657439';
+2024-04-14 23:59:22.764 UTC [108667] ERROR:  syntax error at or near "SELECT" at character 91
+2024-04-14 23:59:22.764 UTC [108667] STATEMENT:  select * from conversations where conversationid = 'c0c65d10-e97d-438e-8e1b-d0610d5ce6d3'
+	SELECT * FROM users WHERE userid = 'e6328e4a-4477-4273-b299-8630ee657439';
+2024-04-14 23:59:23.851 UTC [108667] ERROR:  syntax error at or near "SELECT" at character 91
+2024-04-14 23:59:23.851 UTC [108667] STATEMENT:  select * from conversations where conversationid = 'c0c65d10-e97d-438e-8e1b-d0610d5ce6d3'
+	SELECT * FROM users WHERE userid = 'e6328e4a-4477-4273-b299-8630ee657439';

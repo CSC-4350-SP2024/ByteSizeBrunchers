@@ -3,6 +3,7 @@ const postgres = require('postgres');
 // postgres:flavorfeed is your usernameforpostgres:passwordforpostgres, be sure to change it if your credentials are different
 const sql = postgres('postgres://tama:flavorfeed@localhost/tama');
 const http = require('http');
+const cors = require('cors'); 
 
 // Function to fetch data from the database
 async function fetchAllData() {
@@ -113,7 +114,17 @@ async function userQuery(userID, query) {
         }
         conversationString += 'user: ' + query;
         const llmResponse = await promptLLM(conversationString);
-        return llmResponse;
+        await appendUserInput(conversationID, query)
+        await appendModelOutput(conversationID, llmResponse)
+        return {
+            choices: [
+                {
+                message: {
+                    content: llmResponse,
+                },
+                },
+            ],
+        };
     } catch (error) {
         console.error('Error:', error);
     }
@@ -148,7 +159,19 @@ async function test() {
 //test();
 
 const server = http.createServer(async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
+  res.setHeader('Access-Control-Allow-Methods', 'POST'); // Allow POST method
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Allow Content-Type header
+
+  if (req.method === 'OPTIONS') {
+    // Handle preflight request
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
   if (req.method === 'POST' && req.url === '/query') {
+    console.log('ding');
     let requestBody = '';
 
     req.on('data', (chunk) => {
