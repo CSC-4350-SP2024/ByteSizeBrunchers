@@ -11,13 +11,21 @@ app.use(cors());
 // Parse JSON request bodies
 app.use(bodyParser.json());
 
-// Debug endpoint
+// Query endpoint
 app.post('/query', (req, res) => {
-  console.log('Received debug request:');
+  console.log('Received query request:');
   console.log('Request body:', req.body);
 
-  // Send a response
-  res.json({ message: 'Debug request received successfully' });
+  // Extract the userID and query from the request body
+  const { userID, query } = req.body;
+
+  // Generate a sample response
+  const response = {
+    response: `This is a sample response for the query: "${query}"`,
+  };
+
+  // Send the response
+  res.json(response);
 });
 
 // Start the server
