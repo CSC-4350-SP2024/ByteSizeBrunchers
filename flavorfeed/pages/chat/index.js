@@ -67,10 +67,7 @@ export default function Home() {
 			</ul>
 			<div className= {styles.chatbottom}>
 				<div className={styles.input}>
-					<input type="Start looking for recipes..." onKeyDown={(e) => e.key === 'Enter' && ff_userinput(e.target.value)} />
-				</div>
-				<div className={styles.buttonbox}>
-					<button type="button" className={styles.button}>Enter</button>
+					<input placeholder="Start looking for recipes... Press enter to submit" onKeyDown={(e) => e.key === 'Enter' && ff_userinput(e.target.value)} />
 				</div>
 			</div>
 		</div>
