@@ -9,7 +9,7 @@ export default function Home() {
 	const [messages, setMessages] = useState([]);
 	/*const server_url = 'http://127.0.0.1:3100/query';*/
 	/*const server_url = 'http://127.0.0.1:3000/query'; // original url*/
-	const server_url = 'http://127.0.0.1:3100/query';
+	const server_url = 'http://127.0.0.1:3000/query';
 
 	async function ff_userinput(userinput) {
 		// Add user message to the chat window
@@ -36,8 +36,9 @@ export default function Home() {
 
 			/* get llm response and add to list */
 			const llm_response = await response.json();
+      const llm_content = llm_response.choices[0].message.content.response;
 			console.log(llm_response);
-    	setMessages([...messages, {text: userinput, from:'user'},{ text: llm_response.response, from: 'bot' }]);
+    	setMessages([...messages, {text: userinput, from:'user'},{ text: llm_content, from: 'bot' }]);
 		} catch (error) {
 			console.error('Error fetching response from backend API:', error);
 		}
