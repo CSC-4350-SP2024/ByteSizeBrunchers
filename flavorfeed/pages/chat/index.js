@@ -1,13 +1,15 @@
 import Head from 'next/head';
 import mainpage from '../index.js';
-import dynamic from 'next/dynamic'; //debugging entry
+/*import dynamic from 'next/dynamic'; //debugging entry */
 import styles from './chatpage.module.css';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
 
 	const [messages, setMessages] = useState([]);
-	const server_url = 'http://127.0.0.1:3000/query';
+	/*const server_url = 'http://127.0.0.1:3100/query';*/
+	/*const server_url = 'http://127.0.0.1:3000/query'; // original url*/
+	const server_url = 'http://127.0.0.1:3100/query';
 
 	async function ff_userinput(userinput) {
 		// Add user message to the chat window
@@ -26,7 +28,7 @@ export default function Home() {
 					query: userinput
 				})
 			});
-			console.log(response);
+			//console.log(response);
 
 			if (!response.ok) {
 				throw new Error(`HTTP error! Status: ${response.status}`);
@@ -35,7 +37,7 @@ export default function Home() {
 			/* get llm response and add to list */
 			const llm_response = await response.json();
 			console.log(llm_response);
-    		setMessages([...messages, { text: llm_response.response, from: 'bot' }]);
+    	setMessages([...messages, {text: userinput, from:'user'},{ text: llm_response.response, from: 'bot' }]);
 		} catch (error) {
 			console.error('Error fetching response from backend API:', error);
 		}
@@ -65,7 +67,6 @@ export default function Home() {
 					{message.from === 'user' ? "" : (<span> <img src="../ff_logo.jpg" height="40px"/> </span>)}
 					<p>{message.text}</p>
 				</li>))}
-
 				
 			</ul>
 			<div className= {styles.chatbottom}>

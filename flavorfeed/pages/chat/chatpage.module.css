@@ -69,15 +69,18 @@ background-color:seagreen;
 align-content: center;
 }
 
-.incoming p{
-background-color: beige;
-padding: 12px 16px;
-border-radius: 10px 10px 0 10px;
-max-width:75%;
+.incoming{
+align-self:flex-end;
+display:flex;
 }
 
-.incoming{
-align-self:end;
+.incoming p{
+display:flex;
+background-color: beige;
+padding: 12px 16px 12px 16px;
+border-radius: 10px 10px 0 10px;
+text-align:right;
+margin-right:40px;
 }
 
 .outgoing{
@@ -99,7 +102,7 @@ max-width:75%;
 
 .input {
 flex: 1;
-padding: 10px 10px 10px 40px;
+padding: 10px 40px 10px 40px;
 }
 
 .input input {
